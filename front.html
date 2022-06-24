@@ -1,0 +1,40 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="front.css">
+        <title> GAD </title>
+        <script src="https://code.jquery.com/jquery-git.js"></script>
+        <script>
+            setInterval(function(){
+                    $("#blink").fadeOut(2000)
+                    $("#blink").fadeIn(2000)
+            }, 100);
+        </script>
+    </head>
+
+    <body>
+        <div class="Frame">
+            <div class="top">
+                <h2 align="center"> Welcome To </h2>
+                <h1 style="font-family: cursive;" align="center" style="font-size:60px;"><p id="blink"> GAD </p></h1>
+                <p align="center"> ------ </p>
+                <h3 style="font-family: cursive; color:#FFBF00; font-size:40px" align="center"> Get to AcaDemics </h3>
+            </div>
+
+            <div class="bottom" align="center">
+                <p align="center"> Are you a?</p>
+                <button type="button" onclick="window.location.href='student.html'"> STUDENT </button>
+                <button type="button" onclick="window.location.href='faculty.html'"> FACULTY </button>
+            </div>
+            </br></br>
+            <p align="center" style="color:white">Don't have Account?<a href="signup.html" style="color:#FFDEAD;"><b><u>sign up</u></b></a></p>
+            </br></br></br></br>
+
+            <div class="copyrights">
+                <p align="center" style="color:#EBECF0;"> &copy; GOKUL ANANTH M | ASHOKKUMAR P | DINESH MN 2022</p>
+	            
+            </div>
+        </div>
+    </body>
+</html>

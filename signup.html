@@ -1,0 +1,44 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="common.css">
+        <title> Register </title>
+
+    </head>
+    <body>
+        <div class="box">
+            <div class="heading">
+               <h1 style="color: orange;" align="center"> Sign Up </h1>
+            </div>
+            <div class="signup_details" onreset="myFunction()">
+                <form align="center" action="system.php" method="post">
+                   <input type="text" placeholder="First Name" name="fname" onselect="myFunction1()"><br>
+                   <input type="text" placeholder="Last Name" name="lname" onselect="myFunction1()"><br>
+                   <input type="email" placeholder="Email" name="email" oninvalid="alert('Enter valid email');" onselect="myFunction1()"><br>
+                   <input type="password" placeholder="Password" name="pass" onselect="myFunction1()"><br>
+                   <input type="password" placeholder="confirm Password" name="cpass" onselect="myFunction1()"><br>  
+                   <p style="color: orange;"><I> please upload your ID Proof</I></p>
+                   <input type="file" id="IDFile" name="ID">
+                   <label for="Choose" style="color: orange; font-size: 24px;"> Choose who you are: </label>
+                   <select id="value">
+                        <option value="Choose"> Choose </option>
+                        <option value="Faculty"> Faculty </option>
+                        <option value="Student"> Student </option>
+                   </select><br>
+                   <button type="submit"> Sign UP </button>
+                   <button type="reset"> Reset </button>
+                </form>
+        <script>
+        function myFunction() {
+          alert("The form was reset");
+            }
+        function myFunction1() {
+          alert("Copying Text is not Allowed");
+        }
+        </script>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:wght@200,400&display=swap);
+
+body {
+  background-image: url(front.jpg); 
+  height: 100vh;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.frame {
+  width: 400px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.top {
+  align-items: center;
+  justify-content: space-evenly;
+  color:yellow;
+}
+
+.bottom {
+  align-items: center;
+  justify-content: space-evenly;
+  color: orange;
+}
+
+.bottom button {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  background: #56E4DD;
+  width: 30%;
+  border: 0;
+  border-radius:20px;
+  margin: 0px 0px 8px;
+  padding: 10px;
+  color: #0A3E2F;
+}
+
+.bottom button:hover,.bottom button:focus {
+  background: #56E4DD;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.bottom button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.copyrights {
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+table, th, td{
+border:1px solid blue;
+color: red;
+}

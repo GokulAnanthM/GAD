@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:wght@200,400&display=swap);
+
+body {
+  height: 170vh;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #244F22;
+}
+
+.joinroom {
+  width: 500px;
+  height: 860px;
+  border-radius: 10px;
+  padding: 10px 0;
+  box-shadow: 0 10px 20px rgba(95, 95, 95, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: lightblue;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.input {
+  border: ipx solid #D4E7B5;
+}
+
+form input {
+  width: 370px;
+  height: 50px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: lightyellow;
+}
+
+.checkbox {
+  width: 40px;
+  height: 15px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  background: #56E4DD;
+  width: 110%;
+  height: 25%;
+  border: 0;
+  border-radius:20px;
+  margin: 0px 0px 8px;
+  padding: 10px;
+  color: #0A3E2F;
+}
+
+form button:hover,form button:focus {
+  background: #56E4DD;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+form button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Tips{
+  align-items: center;
+  justify-content: space-evenly;
+}
+

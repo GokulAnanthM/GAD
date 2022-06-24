@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>Home-GAD</title>
+		<style>
+.btn-group button {
+  background-color: #04AA6D; 
+  border: 1px solid green; 
+  color: white; 
+  padding: 10px 24px; 
+  cursor: pointer; 
+  float: left; 
+   align: center;
+}
+
+.notification {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: green;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; 
+}
+
+
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+.logo
+{
+display: flex;
+justify-content: center;
+}
+
+</style>
+	</head>
+	
+
+<body>
+	<div class="header">
+		<p align="center" style="color: green; border: 100px;">DATE:  <span id='datetime'>	</span></p>	
+	</div>
+	<hr>
+	<script>
+		var dt = new Date();
+		document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2))+":"+(("0"+dt.getSeconds()).slice(-2));
+		
+		function refreshTime() {
+				  const timeDisplay = document.getElementById("datetime");
+				  const dateString = new Date().toLocaleString();
+				  const formattedString = dateString.replace(", ", " - ");
+				  timeDisplay.textContent = formattedString;
+				}
+		  setInterval(refreshTime, 1);
+	</script>
+
+	<div class="btn-group">
+	  <a href="classroom.html" target="_self"><button>CLASSROOM</button></a>
+ 	 	<a href="ATTENDANCE.html" target="_self"><button>ATTENDANCE</button></a>
+		<a href="TODO.html" target="_self"><button>TO-DO</button></a>
+ 	 	<a href="TEST.html" target="_self"><button>TEST</button></a>
+		<a href="RESULT.html" target="_self"><button>RESULT</button></a>
+		<a href="chat.html" target="_self"><button>CHAT WITH PEERS</button></a>
+		<a href="ccertificate.html" target="_self"><button>COURSE CERTIFICATE</button></a>
+		<a href="joinclass.html" target="_self"><button>JOIN CLASSROOM</button></a>
+		<a href="createclass.html" target="_self"><button>CREATE ROOM</button></a>
+		<a href="about.html" target="_self"><button>ABOUT US</button></a>
+		<a href="rateus.html" target="_self"><button>RATE US</button></a>
+	</div><br>
+	<div class="logo">
+	<img width="600" src="gadlogo.jpg">
+	</div>
+	<div>
+  	<h1 ALIGN="CENTER">GET TO ACADEMICS</h1>
+	<h4 align="center"><i>"Let's Educate Each Other"</i></h4>
+	</div>
+	<a href="notification.html"><img src="noti.jpg" width="7%" class="notification"></a>
+</body>
+</html>

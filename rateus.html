@@ -1,0 +1,43 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="rateuscs.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <div class="feedback">
+    <div class="image">
+      <img src="gad.png" alt="gadlogo" id="gad" style="position: absolute;">
+    </div>
+    <div class="form">
+      <p style="font-size: 48px; align-items: center; color: #819FF7; font-family: Calisto MT; margin-left:450px; margin-top:80px;"><bold> YOUR FEEDBACK YOUR <br> BETTER COMFORTABLE </bold></p>
+      <form method="post" action="connect.php">
+        <h4> RATE US <span></span></h4>
+        <div class="stars">
+        <input class="star star-5" id="star-5" type="radio" name="star" value=5/>
+        <label class="star star-5" for="star-5" style="color: #fff;"></label>
+        <input class="star star-4" id="star-4" type="radio" name="star" value=4/>
+        <label class="star star-4" for="star-4" style="color: #fff;"></label>
+        <input class="star star-3" id="star-3" type="radio" name="star" value=3/>
+        <label class="star star-3" for="star-3" style="color: #fff;"></label>
+        <input class="star star-2" id="star-2" type="radio" name="star" value=2/>
+        <label class="star star-2" for="star-2" style="color: #fff;"></label>
+        <input class="star star-1" id="star-1" type="radio" name="star" value=1/>
+        <label class="star star-1" for="star-1" style="color: #fff;"></label>
+        </div>
+        <br>
+        <input type="text" id="name" placeholder="Name" name="name">
+        <br>
+        <input type="text" id="email" placeholder="Email" name="email">
+        <br>
+        <textarea id="feedback" name="feedback" placeholder="Feedback"></textarea>
+        <br><br>
+        <input type="submit" id="submit" value="submit">
+	      <br>
+      </form>
+    </div>
+  </div>
+ 
+</body>
+</html>
